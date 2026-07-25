@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# --- Env / secrets ---
+.env
+
+# --- Data & models (large binary artifacts, keep out of git) ---
+backend/data/raw/*
+!backend/data/raw/.gitkeep
+backend/data/processed/*
+!backend/data/processed/.gitkeep
+backend/saved_models/*
+!backend/saved_models/.gitkeep
+
+# --- Node / frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
